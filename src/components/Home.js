@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  BsFillEmojiLaughingFill,
+  BsFillImageFill,
+  BsHeart,
+  BsFillChatDotsFill,
+  BsReplyAll,
+} from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -87,7 +94,7 @@ const Home = () => {
               provident aperiam.
             </p>
           </div>
-          <hr className="bg-slate-500"/>
+          <hr className="bg-slate-500" />
           {/* // style={
             //   (style={"height:2px;borderWidth:0;color:gray;backgroundColor:gray;"})
             // } */}
@@ -107,6 +114,25 @@ const Home = () => {
           placeholder="Add Commenter"
           className="input input-bordered w-full max-w-md"
         />
+        <div className="flex px-3 text-2xl items-center">
+          <p className="px-2">
+            <BsFillEmojiLaughingFill />
+          </p>
+          <p>
+            <BsFillImageFill />
+          </p>
+        </div>
+        <div className="flex px-6 text-2xl items-center">
+          <button>
+            <BsHeart />
+          </button>
+          <p className="px-5">
+            <BsFillChatDotsFill />
+          </p>
+          <p>
+            <BsReplyAll />
+          </p>
+        </div>
       </div>
       <div></div>
     </div>
